@@ -51,6 +51,6 @@ app.post('/list', async (req, res) => {
   res.send({ pokemonList, next, previous  })
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log('Listening on port ' + port);
 })

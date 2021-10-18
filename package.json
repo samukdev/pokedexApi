@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "dev"
+    "test": "dev",
+    "start": "node app.js"
   },
   "author": "Samuk Dev",
   "license": "ISC",

@@ -1,6 +1,6 @@
 const express = require('express');
 const axios = require('axios');
-const cor = require('cors');
+const cors = require('cors');
 
 const port = 3001;
 
@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.post('/list', async (req, res) => {
+  console.log("Retrieving list...");
   let fetchPokemonUrl;
   const { search, nextUrl } = req.body;
 
